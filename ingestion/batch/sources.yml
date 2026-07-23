@@ -1,0 +1,24 @@
+# Configuração de DADOS. Ambiente (projeto/bucket) vem do .env
+
+sources:
+  - name: uf
+    source: basedosdados.br_inep_avaliacao_alfabetizacao.uf
+    partition_column: ano
+  - name: municipio
+    source: basedosdados.br_inep_avaliacao_alfabetizacao.municipio
+    partition_column: ano
+  - name: meta_alfabetizacao_brasil
+    source: basedosdados.br_inep_avaliacao_alfabetizacao.meta_alfabetizacao_brasil
+    partition_column: ano
+  - name: meta_alfabetizacao_uf
+    source: basedosdados.br_inep_avaliacao_alfabetizacao.meta_alfabetizacao_uf
+    partition_column: ano
+  - name: meta_alfabetizacao_municipio
+    source: basedosdados.br_inep_avaliacao_alfabetizacao.meta_alfabetizacao_municipio
+    partition_column: ano
+  - name: alunos
+    source: basedosdados.br_inep_avaliacao_alfabetizacao.alunos
+    partition_column: ano
+  - name: diretorio_municipio
+    source: basedosdados.br_bd_diretorios_brasil.municipio
+    partition_column: null
